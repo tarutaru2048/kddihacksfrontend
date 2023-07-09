@@ -1,28 +1,33 @@
 <template>
   <v-row justify="center">
     <v-col cols="5" class = "my-6">
-    <h2>2023年度  〇〇学会  Day2  会場3</h2>
+    <h2>2023年度  KDDIハッカソン学会  &nbsp; 会場:クサヤ温泉</h2>
     <v-card class="pa-2 my-6">
+      <v-img
+        src= "/images/it.png"
+        contain
+        :style="{width: '100%', height: 'auto'}"
+      ></v-img>
     <v-card-title class="headline mb-0" style="white-space: pre-line;">
-      持続可能な開発目標における人工知能の影響の探究
+      深層学習による画像認識を用いたコンクリート建造物の変状検出に関する研究
     </v-card-title>
     <v-card-subtitle class="subtitle-1">
-      田中太郎
+      青山亘佐
     </v-card-subtitle>
     <v-card-text>
       キーワード：
       <br>
-      持続可能な開発目標
+      コンクリート構造
       <br>
-      人工知能
+      橋梁検査
       <br>
-      AI（人工知能）
+      深層学習
       <br>
-      影響
+      画像認識
       <br>
-      テクノロジー
+      物体検出
       <br>
-      データ分析
+      畳み込みニューラルネットワーク（CNN）
     </v-card-text>
   </v-card>
     </v-col>

@@ -5,7 +5,7 @@
         <v-container>
           <v-row>
             <v-col>
-              <h1>2023年度  〇〇学会  Day2  会場3</h1>
+              <h1>2023年度  KDDIハッカソン学会  &nbsp; 会場:クサヤ温泉</h1>
             </v-col>
           </v-row>
           <v-row>
@@ -16,14 +16,19 @@
             >
 
               <v-card class="mr-3" max-width="320" @click="navigateToChat(card.page)">
-                <v-img
-                  :src="card.image"
-                  aspect-ratio="1.5"
-                  contain
-                  :style="{width: '100%', height: 'auto'}"
-                ></v-img>
-                <v-card-title class="text-wrap" style="line-height: 1.2; height: 3.0em; overflow: hidden;">{{card.title}}</v-card-title>
+                <div
+                :style="{
+                width: '100%',
+                paddingTop: '66.66%',
+                backgroundImage: `url(${card.image})`,
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover'
+                }"
+                ></div>
                 <v-card-subtitle>{{card.subtitle}}</v-card-subtitle>
+                <v-card-title class="text-wrap" style="line-height: 1.2; height: 6.0em; overflow: hidden;font-size: 1.2em;">{{card.title}}</v-card-title>
+                
               </v-card>
               
             </v-col>
@@ -51,12 +56,18 @@
     data() {
     return {
       cards: [
-        { title: '持続可能な開発目標における人工知能の影響の探究', subtitle: '田中太郎', image: '/images/wordcloud1.png' , page: 'chat1' },
-        { title: 'クラウドコンピューティングセキュリティ：課題と緩和策', subtitle: '西川治郎', image: '/images/wordcloud2.png' , page: 'chat2' },
-        { title: '研究3', subtitle: '研究者C', image: '/images/wordcloud1.png' , page: 'chat3' },
-        { title: '研究4', subtitle: '研究者D', image: '/images/wordcloud2.png' , page: 'chat4' },
-        { title: '研究5', subtitle: '研究者E', image: '/images/wordcloud1.png' , page: 'chat5' },
-        { title: '研究6', subtitle: '研究者F', image: '/images/wordcloud2.png' , page: 'chat6' },
+        //IT (1ページ目)
+        { title: '深層学習による画像認識を用いたコンクリート建造物の変状検出に関する研究', subtitle: '青島亘佐', image: '/images/it.png' , page: 'chat1' },
+        //建築 (2ページ目)
+        { title: '「戦後『新建築』誌に見られた建築家の創作の主題」に対する討論', subtitle: '奥山信一', image: '/images/construction.png' , page: 'chat2' },
+        //材料 (3ページ目)
+        { title: '超塑性ナイロン系アロイの構造と物性', subtitle: '熱海智也', image: '/images/material.png' , page: 'chat3' },
+        //深層学習 (4ページ目)
+        { title: '深層畳み込みニューラルネットワークに基づくコンクリート表面のひび割れ検出システム', subtitle: '野村泰稔', image: '/images/deeplearning.png' , page: 'chat4' },
+        //経済 (5ページ目)
+        { title: 'バングラディシュの貧困問題とマイクロクレジットの役割-ボグラ県のボイラ村とカシャハル村の調査を通じて-', subtitle: 'MOHAMMAD ARMANUR RAHMAN', image: '/images/economic.png' , page: 'chat5' },
+        //音楽 (6ページ目)
+        { title: '音楽と感情に関する研究の展開', subtitle: '森数馬', image: '/images/music.png' , page: 'chat6' },
       ]
     }
   }

@@ -6,7 +6,14 @@
         <v-btn icon @click="$router.push('/')">
           <v-icon>mdi-home</v-icon>
         </v-btn>
-        <v-toolbar-title>Chat-Cloud(アプリ名)</v-toolbar-title>
+
+        <v-img
+        :src="'/images/Chatcloudlogo.png'"
+        aspect-ratio="1"
+        max-width="80"
+        class="mr-2"
+        ></v-img>
+        <v-toolbar-title>Chat-Cloud</v-toolbar-title>
   
       </v-app-bar>
     <v-main>

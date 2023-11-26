@@ -1,24 +1,9 @@
-# router_vuetify_test1
+# KDDI Developers Hacks 2023 frontend
+KDDI Developers Hacks 2023にて、フロントエンドを担当させていただきました。
+コチラは私の制作部分の途中成果です。
+最終成果物はチームメンバーの方がコチラにまとめております。
 
-## Project setup
-```
-npm install
-```
+<https://github.com/tomo-cps/KDDI-Hacks2023>
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 結果
+優秀賞をいただきました！
